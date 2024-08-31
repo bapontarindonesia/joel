@@ -1,0 +1,316 @@
+:root {
+    --red: #f11111; 
+    --bg: #000;
+    --shadow: 0 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', san-serif;
+    min-height: 3000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg); */
+    background-size: cover; 
+    background-position: center;
+    z-index: -1;
+    /* filter: saturate(); */
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.hero h1, hero h4, hero h3, hero p {
+    text-shadow: var(--shadow)
+}
+
+.hero h1 {
+    font-family: Work Sans;
+    font-size: 3rem;
+    color: #e70d31;
+
+}
+
+.hero h2 {
+    font-family: Work Sans;
+    /* font-size: 2rem; */
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--red);
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar h5 {
+font-size: 4rem;
+}
+
+.mynavbar .navbar-brand, mynavbar .offcanvas-title {
+font-family: Work Sans;
+font-size: 3.2rem;
+font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    /* font-weight: 600; */
+    text-transform: uppercase;
+}
+
+.profil {
+    background-color: aliceblue;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.profil h2 {
+    color: var(--red);
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.profil h3 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.profil span {
+    text-transform: uppercase;
+    color:#666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.profil p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.profil .couple {
+    margin-top: 100px;
+}
+
+.profil .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: #000;
+}
+
+.profil .couple img {
+    width: 100%;
+}
+
+.visimisi {
+    background-color: #000;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.kontak h2, .visimisi h2, .galeri h2, .polling h2  {
+    color: var(--red);
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.galeri {
+    background-image: url(img/s-o-c-i-a-l-c-u-t-gREi-9tI5Mg-unsplash.jpg);
+    /* filter: grayscale(); */
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.kontak {
+    background-color: white;
+    color: var(--bg);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.kontak a btn:hover {
+    background-color: #f11111;
+    color: #fff;
+    border: 1px solid #f11111;
+    
+}
+
+.polling {
+    background-image: url(img/jason-leung-UMncYEfO9-U-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
+/* .polling { */
+/* font-size: 4.5rem; */
+/* } */
+
+.polling p {
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+
+.polling form label {
+color:#fff;
+}
+
+.polling button {
+    background-color: #e70d31;
+    color: white;
+    border: 1px solid #e70d31;
+}
+
+.polling button:hover {
+    background-color: white;
+    color: #e70d31;
+    border: 1px solid white;
+}
+
+
+/* Footer */
+footer {
+    padding: 3rem;
+    background-color: var(--bg);
+    color: white;
+  }
+  
+  footer a {
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  footer li {
+    list-style: none;
+    display: inline;
+    color: white;
+    margin: 0.5rem;
+  }
+  
+/* Footer */
+
+
+/* Audio */
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 5rem;
+    cursor: pointer;
+    color: whitesmoke;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media Query */
+/* laptop */
+@media (max-width: 992px){
+html {
+    font-size: 75%;
+}
+}
+
+.simply-countdown > .simply-section {
+    padding: 70px;
+}
+/* tablet */
+@media (max-width: 768px){
+    html {
+        font-size: 65%;
+}
+.mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sticky-top {
+    overflow: hidden;
+}
+}
+
+.simply-countdown > .simply-section {
+    padding: 60px;
+}
+/* mobile phone */
+@media (max-width: 576px){
+    html {
+        font-size: 60%;
+        margin: 5px;
+}
+}
+
+.simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+}
